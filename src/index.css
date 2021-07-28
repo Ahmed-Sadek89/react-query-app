@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    text-transform: capitalize;
+    background-color: #1c1b1b;
+    font-family: sans-serif;
+}
+.App{
+    width: 50%;
+    margin: 50px auto;
+}
+.App h1{
+    color: #fbfb40;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.App .AllButton{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.App .AllButton button{
+    margin: 5px;
+    background-color: transparent;
+    outline: none;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.App .AllButton button:hover{
+    background-color: #fbfb40;
+    color:#222;
+    border:2px solid #222;
+}
+.App .AllData{
+    margin-left: 20px;
+}
+.App .AllData h4{
+    color: #eee;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App .AllData .AllPeople div,
+.App .AllData .AllVehicles div{
+    background-color: #3e3e3e;
+    width: 90%;
+    border-radius: 10px;
+    padding: 1px 10px;
+    margin-bottom: 15px;
+}
+.App .AllData .AllPeople div,
+.App .AllData .AllVehicles div{
+    background-color: #3e3e3e;
+    width: 90%;
+    border-radius: 10px;
+    padding: 14px 10px;
+    margin-bottom: 15px;
+}
+.App .AllData .AllPeople div h6,
+.App .AllData .AllVehicles div h6{
+    margin: 0px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: #fbfb40;
+}
+.App .AllData .AllPeople div p,
+.App .AllData .AllVehicles div p{
+    margin: 0px;
+    color: #b0b0b0;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.App .AllData .AllPeople div p span,
+.App .AllData .AllVehicles div p span{
+    margin-right: 7px;
+}
+.status{
+    color:#b0b0b0
+}
+.prev-next{
+    margin: 3px;
+    background-color: transparent;
+    outline: none;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
